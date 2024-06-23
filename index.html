@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #647e54;
+            color: #fff;
+        }
+        .body-ratings {
+            background-color: #fff;
+            color: #000;
+            padding: 50px 0;
+        }
+        /* Navbar styles */
+        .navbar-custom {
+            background-color: #ffffff; /* White background */
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #000000; /* Black text */
+        }
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #333333; /* Darker text on hover */
+        }
+        /* Header styles */
+        .header {
+  background-image: url("assets/img/Background.png"); /* Replace with your actual image URL */
+  background-size: 100% 100%; /* or use object-fit: contain; */
+  background-position: center;
+  height: 560px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  object-fit: contain; /* Add this property */
+}
+        .header-logo {
+            margin-left: -10%;
+            max-width: 400px;
+            height: 350px; /* Adjust logo size */
+            margin-bottom: 20px;
+        }
+        .header-buttons {
+            margin-top: 20px;
+        }
+        .header-buttons a {
+            margin-right: 10px;
+        }
+        .header-buttons a.btn {
+            color: #fff;
+            border-color: #fff;
+        }
+        /* Testimonial card styles */
+        .testimonial-card {
+            background-color: #a8df7c;
+            border: 10px solid #4cc858;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333;
+            margin: 15px auto;
+            max-width: 450px;
+            position: relative; /* Ensure z-index works correctly */
+        }
+        .testimonial-card h5 {
+            font-weight: bold;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            text-align: left;
+        }
+        .testimonial-card .author {
+            font-weight: bold;
+            text-align: left;
+        }
+        .testimonial-card .author-title {
+            font-size: 0.9rem;
+            text-align: left;
+            color: #555;
+        }
+        .testimonial-card .stars {
+            text-align: left;
+            color: #FFD700;
+        }
+        .read-more {
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            float: right; /* Align to the right */
+            margin-top: 10px; /* Top margin for spacing */
+            position: absolute;
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            z-index: 1; /* Ensure it's above the testimonial card */
+        }
+        /* Footer styles */
+        footer {
+            background-color: skyblue;
+            color: #000;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+        }
+        footer p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" href="#">Your Brand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header with Image Background -->
+<header class="header">
+    <div class="container">
+        <img src="assets/img/Book1.png" alt="Logo" class="header-logo">
+        <div class="header-buttons">
+            <a href="#" class="btn btn-primary btn-lg">Button 1</a>
+            <a href="#" class="btn btn-secondary btn-lg">Button 2</a>
+        </div>
+    </div>
+</header>
+
+<!-- Testimonial Slider Section -->
+<section id="testimonials" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 text-white">BOOK REVIEW</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card text-center">
+                        <p>What is particularly attractive in <strong>The Amazing Scientific Adventures of Harvy, a Brilliant Cane</strong> is the almost palpable presence of the grandfatherly narrator making wondrous nature understandable to younger folks. The book is a feast of the mind for curious younger readers as well as a terrific read aloud for parents, grandmas and grandpas. Mind-boggling phenomena such as aviation and buoyancy are patiently portrayed and explained.</p>
+                        <div class="author">- Pacific Book Reviews</div>
+                        <div class="author-title">David Allen</div>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card text-center">
+                        <p>Just finished reading <strong>The Amazing Scientific Adventures of Harvy, a Brilliant Cane</strong>. That is a book that is very inviting to read and appreciate, from one of the most preeminent and accomplished American scientist / engineer, Professor Sheldon Weinbaum. The book is highly entertaining and educational both for the young and the young at heart. Professor Weinbaum creatively and thoughtfully makes accessible some of the fundamental principles of physics and engineering to...</p>
+                        <div class="author">- Elected Member - National Academy of Engineering</div>
+                        <div class="author-title">Dr. Gabe Tzeghai</div>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card text-center">
+                        <p>Just finished reading <strong>The Amazing Scientific Adventures of Harvy, a Brilliant Cane</strong>. That is a book that is very inviting to read and appreciate, from one of the most preeminent and accomplished American scientist / engineer, Professor Sheldon Weinbaum. The book is highly entertaining and educational both for the young and the young at heart. Professor Weinbaum creatively and thoughtfully makes accessible some of the fundamental principles of physics and engineering to...</p>
+                        <div class="author">- Elected Member - National Academy of Engineering</div>
+                        <div class="author-title">Dr. Gabe Tzeghai</div>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card text-center">
+                        <p>Just finished reading <strong>The Amazing Scientific Adventures of Harvy, a Brilliant Cane</strong>. That is a book that is very inviting to read and appreciate, from one of the most preeminent and accomplished American scientist / engineer, Professor Sheldon Weinbaum. The book is highly entertaining and educational both for the young and the young at heart. Professor Weinbaum creatively and thoughtfully makes accessible some of the fundamental principles of physics and engineering to...</p>
+                        <div class="author">- Elected Member - National Academy of Engineering</div>
+                        <div class="author-title">Dr. Gabe Tzeghai</div>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <!-- Add more carousel items here as needed -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Book Ratings Section -->
+<section id="book-ratings" class="body-ratings">
+    <div class="container">
+        <h2 class="text-center mb-5">BOOK RATINGS</h2>
+        <div id="bookRatingsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card text-center">
+                        <p>Ratings and reviews for <strong>The Amazing Scientific Adventures of Harvy, a Brilliant Cane</strong>.</p>
+                        <div class="author">- Some Reviewer 1</div>
+                        <div class="author-title">Reviewer's Title</div>
+                        <div class="stars">★★★★★</div>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card text-center">
+                        <p>Another review for <strong>The Amazing Scientific Adventures of Harvy, a Brilliant Cane</strong>.</p>
+                        <div class="author">- Some Reviewer 2</div>
+                        <div class="author-title">Reviewer's Title</div>
+                        <div class="stars">★★★★★</div>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <!-- Add more carousel items here as needed -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookRatingsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookRatingsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- YouTube Video Section -->
+<section id="youtube-video" class="py-5">
+    <div class="container text-center">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="800" height="450" src="https://www.youtube.com/embed/IpIMLNw_oDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>Sheldon Weinbaum</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Initialize Bootstrap Carousel for Testimonials
+    var testimonialCarousel = new bootstrap.Carousel(document.getElementById('testimonialCarousel'), {
+        interval: 5000, // Adjust slide interval as needed
+        wrap: true // Enable looping of slides
+    });
+
+    // Initialize Bootstrap Carousel for Book Ratings
+    var bookRatingsCarousel = new bootstrap.Carousel(document.getElementById('bookRatingsCarousel'), {
+        interval: 5000, // Adjust slide interval as needed
+        wrap: true // Enable looping of slides
+    });
+</script>
+</body>
+</html>
