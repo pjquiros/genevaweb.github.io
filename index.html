@@ -7,9 +7,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
 
     <style>
-        body {
+        #testimonials {
+            padding: 30px 0; /* Add padding top and bottom */
+            overflow: hidden; /* Hide overflow content */
+            max-height: 550px;
+        }
+        #testimonials-divider {
+            height: 5px;
+            background-color: white;
+        }
+        .heading-outline {
+        margin-top: -1%;
+        color: black;
+        text-shadow: 0px 0px 5.5px #474747;
+        text-align: center;
+        }
+   body {
             background-color: #647e54;
             color: #fff;
         }
@@ -62,12 +78,20 @@
             padding: 50px 0;
             object-fit: contain; /* Add this property */
         }
+
         .header-logo {
-            margin-left: -10%;
+            margin-left: -5%;
             max-width: 400px;
             height: 350px; /* Adjust logo size */
             margin-bottom: 20px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease; /* Updated transition */
+            transform: perspective(600px) rotateX(0deg) rotateY(0deg);
         }
+
+        .header-logo:hover {
+            transform: perspective(600px) rotateX(10deg) rotateY(10deg) scale(1.1);
+        }
+
         .header-buttons {
             margin-top: 20px;
         }
@@ -91,7 +115,8 @@
 
         .header-buttons a.btn {
             color: #fff;
-            border-color: #fff;
+            border-color: #0000003d;
+            margin-bottom: 5%;
         }
         /* Testimonial card styles */
         .testimonial-card {
@@ -104,6 +129,7 @@
             margin: 15px auto;
             max-width: 450px;
             position: relative; /* Ensure z-index works correctly */
+            margin-bottom: 5%;
         }
         .testimonial-card h5 {
             font-weight: bold;
@@ -153,7 +179,7 @@
         }
 
         /* Custom CSS for responsive iframe */
-        @media (max-width: 640px) {
+        @media (max-width: 430px) {
             #youtube-video .embed-responsive {
                 position: relative;
                 height: 0;
@@ -171,6 +197,30 @@
             .header-logo {
                 margin-left: -20%;
             }
+        }
+        @media (max-width: 830px) {
+            #youtube-video .embed-responsive {
+                position: relative;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            }
+            #youtube-video .embed-responsive iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .header-logo {
+                margin-left: -20%;
+            }
+        }
+        .heading-outline1 {
+        color: black;
+        text-shadow: 0px 0px 5.5px #B3B9B3;
+        text-align: center;
         }
     </style>
 </head>
@@ -200,23 +250,23 @@
 </nav>
 
 <header class="header">
-    <div class="container">
-        <img src="assets/img/Book1.png" alt="Logo" class="header-logo animate__animated animate__zoomIn">
-        <div class="header-buttons animate__animated animate__fadeInUp">
-            <a href="https://a.co/d/3QYiO35" class="btn btn-secondary btn-lg">
-                <img src="assets/img/icons/amazon.png" style="height: 1.2em; vertical-align: middle; margin-right: 10px;"> Amazon
-            </a>
-            <a href="https://www.barnesandnoble.com/w/the-amazing-scientific-adventures-of-harvy-a-brilliant-cane-sheldon-weinbaum/1144225807?ean=9781959483717" class="btn btn-secondary btn-lg">
-                <img src="assets/img/icons/store.png" style="height: 1.2em; vertical-align: middle; margin-right: 10px;"> Barnes & Noble
-            </a>
-        </div>
+    <img src="assets/img/Book1.png" alt="Sheldon Weinbaum" class="header-logo">
+    <div class="header-buttons animate__animated animate__fadeInUp">
+        <a href="https://a.co/d/3QYiO35" class="btn btn-secondary btn-lg">
+            <img src="assets/img/icons/amazon.png" style="height: 1.2em; vertical-align: middle; margin-right: 10px;"> Amazon
+        </a>
+        <a href="https://www.barnesandnoble.com/w/the-amazing-scientific-adventures-of-harvy-a-brilliant-cane-sheldon-weinbaum/1144225807?ean=9781959483717" class="btn btn-secondary btn-lg">
+            <img src="assets/img/icons/store.png" style="height: 1.2em; vertical-align: middle; margin-right: 10px;"> Barnes & Noble
+        </a>
     </div>
 </header>
 
+<section id="testimonials-divider" class="py-5">
+    <h2 class="heading-outline">BOOK REVIEW</h2>
+</section>
 <!-- Testimonial Slider Section -->
 <section id="testimonials" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5 text-white animate__animated animate__fadeInUp" style="font-weight: bold;">BOOK REVIEW</h2>
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -268,7 +318,7 @@
 <!-- Book Ratings Section -->
 <section id="book-ratings" class="body-ratings">
     <div class="container">
-        <h2 class="text-center mb-5 animate__animated animate__fadeInUp" style="font-weight: bold;">BOOK RATINGS</h2>
+        <h2 class="heading-outline1">BOOK RATINGS</h2>
         <div id="bookRatingsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
