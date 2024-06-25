@@ -38,11 +38,11 @@ body {
 }
 .header-buttons a {
   margin-right: 10px;
-  background-color: #777; /* Grey background color */
-  color: #000000; /* White text color */
-  border: 2px solid #00000027; /* Black border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+  background-color: #777;
+  color: #000000;
+  border: 2px solid #00000027;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .header-buttons a {
   margin-right: 10px;
@@ -51,42 +51,42 @@ body {
 }
 
 .header-buttons a i {
-  margin-right: 5px; /* Adjust spacing between icon and text */
-  font-size: 1.5rem; /* Adjust icon size as needed */
+  margin-right: 5px;
+  font-size: 1.5rem;
 }
 /* Navbar styles */
 .navbar-custom {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-  color: #000000; /* Black text */
+  color: #000000;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: darkgreen; /* Darker text on hover */
+  color: darkgreen;
 }
 /* Header styles */
 .header {
-  background-image: url("../img/Background.png"); /* Replace with your actual image URL */
-  background-size: 100% 100%; /* or use object-fit: contain; */
+  background-image: url("../img/Background.png");
+  background-size: 100% 100%;
   background-position: center;
-  height: 560px; /* Adjust height as needed */
+  height: 560px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 50px 0;
-  object-fit: contain; /* Add this property */
+  object-fit: contain;
 }
 
 .header-logo {
   margin-left: -5%;
   max-width: 400px;
-  height: 350px; /* Adjust logo size */
+  height: 350px;
   margin-bottom: 20px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Updated transition */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; 
   transform: perspective(600px) rotateX(0deg) rotateY(0deg);
 }
 
@@ -130,7 +130,7 @@ body {
   color: #333;
   margin: 15px auto;
   max-width: 450px;
-  position: relative; /* Ensure z-index works correctly */
+  position: relative;
   margin-bottom: 5%;
 }
 .testimonial-card h5 {
@@ -150,7 +150,7 @@ body {
   color: #555;
 }
 .testimonial-card .stars {
-  font-size: 1.5rem; /* Adjust font size as needed */
+  font-size: 1.5rem;
   text-align: left;
   color: #ffd700;
   text-shadow: 0px 0px 2px #000000;
@@ -159,12 +159,12 @@ body {
   color: #000;
   font-weight: bold;
   text-decoration: none;
-  float: right; /* Align to the right */
-  margin-top: 10px; /* Top margin for spacing */
+  float: right;
+  margin-top: 10px;
   position: absolute;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  z-index: 1; /* Ensure it's above the testimonial card */
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
   -webkit-text-stroke: 1px white;
   font-weight: bold;
   paint-order: stroke fill;
@@ -174,17 +174,17 @@ body {
 footer {
   background-color: #8fe6eb;
   font-family: "Josefin Slab", serif;
-  color: #716a6a; /* White text */
+  color: #716a6a;
   text-align: center;
-  padding: 10px 0; /* Adjusted padding */
+  padding: 10px 0;
   position: relative;
   bottom: 0;
   width: 100%;
 }
 
 footer p {
-  font-size: 20px; /* Reduced font size */
-  margin-bottom: 0; /* Remove default margin */
+  font-size: 20px;
+  margin-bottom: 0;
   font-weight: bold;
 }
 
@@ -195,7 +195,7 @@ footer p {
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 56.25%;
   }
   #youtube-video .embed-responsive iframe {
     position: absolute;
@@ -214,7 +214,7 @@ footer p {
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 56.25%;
   }
   #youtube-video .embed-responsive iframe {
     position: absolute;
@@ -237,10 +237,10 @@ footer p {
 }
 .carousel-control-prev img,
 .carousel-control-next img {
-  width: 30px; /* adjust the width as needed */
-  height: 40px; /* adjust the height as needed */
-  background-color: transparent; /* green background color */
-  padding: 5px; /* add some padding for better visibility */
+  width: 30px;
+  height: 40px;
+  background-color: transparent;
+  padding: 5px;
 }
 .carousel-control-prev img:focus,
 .carousel-control-next img:focus {
@@ -248,22 +248,22 @@ footer p {
 }
 .carousel-control-prev,
 .carousel-control-next {
-  top: 45%; /* Adjust top position as needed */
-  width: 59%; /* Adjust width as needed */
+  top: 45%;
+  width: 59%;
   height: 1%;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  top: 45%; /* Adjust top position as needed */
-  width: 59%; /* Adjust width as needed */
+  top: 45%;
+  width: 59%;
   height: 1%;
 }
 @media (max-width: 1272px) {
   .carousel-control-prev,
   .carousel-control-next {
-    top: 45%; /* Adjust top position as needed */
-    width: 0%; /* Adjust width as needed */
+    top: 45%;
+    width: 0%;
     height: 1%;
   }
 
@@ -272,7 +272,7 @@ footer p {
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 56.25%;
   }
   #youtube-video .embed-responsive iframe {
     position: absolute;
@@ -285,8 +285,8 @@ footer p {
 @media (max-width: 390px) {
   .carousel-control-prev,
   .carousel-control-next {
-    top: 45%; /* Adjust top position as needed */
-    width: 20%; /* Adjust width as needed */
+    top: 45%;
+    width: 20%;
     height: 1%;
   }
 }
@@ -294,8 +294,8 @@ footer p {
 @media (max-width: 414px) {
   .carousel-control-prev,
   .carousel-control-next {
-    top: 45%; /* Adjust top position as needed */
-    width: 0%; /* Adjust width as needed */
+    top: 45%;
+    width: 0%;
     height: 1%;
   }
 }
@@ -303,27 +303,27 @@ footer p {
 @media (max-width: 830px) {
   .carousel-control-prev,
   .carousel-control-next {
-    top: 45%; /* Adjust top position as needed */
-    width: 0%; /* Adjust width as needed */
+    top: 45%;
+    width: 0%;
     height: 1%;
   }
 }
 
 @media (max-width: 768px) {
   .testimonial-card {
-    font-size: 0.9rem; /* Adjust font size as needed */
+    font-size: 0.9rem;
   }
   .testimonial-card h5 {
-    font-size: 1.2rem; /* Adjust font size as needed */
+    font-size: 1.2rem;  
   }
   .testimonial-card .author {
-    font-size: 0.8rem; /* Adjust font size as needed */
+    font-size: 0.8rem;  
   }
   .testimonial-card .author-title {
-    font-size: 0.7rem; /* Adjust font size as needed */
+    font-size: 0.7rem;  
   }
   .testimonial-card .stars {
-    font-size: 1.2rem; /* Adjust font size as needed */
+    font-size: 1.2rem;  
   }
   .modal-body strong {
     font-size: 0.8rem;
@@ -334,7 +334,7 @@ footer p {
     margin-left: 5%;
   }
   .modal-body p {
-    font-size: 0.8rem; /* adjust font size as needed */
+    font-size: 0.8rem;  
     text-align: left;
     color: #333;
     font-style: italic;
@@ -343,17 +343,17 @@ footer p {
     margin-top: -10%;
   }
   .modal-dialog {
-    max-width: 90%; /* adjust the width as needed */
-    margin: 20px auto; /* add some margin to center the modal */
+    max-width: 90%;
+    margin: 20px auto;
   }
   .modal-content {
-    padding: 20px; /* adjust the padding as needed */
+    padding: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .testimonial-card {
-    max-width: 300px; /* Adjust max-width as needed */
+    max-width: 300px;
     .modal-body strong {
       font-size: 0.8rem;
       text-align: left;
@@ -371,7 +371,7 @@ footer p {
     margin-left: 5%;
   }
   .modal-body p {
-    font-size: 0.8rem; /* adjust font size as needed */
+    font-size: 0.8rem;  
     text-align: left;
     color: #333;
     font-style: italic;
@@ -380,27 +380,27 @@ footer p {
     margin-top: -5%;
   }
   .modal-dialog {
-    max-width: 90%; /* adjust the width as needed */
-    margin: 20px auto; /* add some margin to center the modal */
+    max-width: 90%;
+    margin: 20px auto;
   }
   .modal-content {
-    padding: 20px; /* adjust the padding as needed */
+    padding: 20px;
   }
 }
 
 .modal-lg {
-  max-width: 800px; /* adjust max-width as needed */
+  max-width: 800px;
 }
 
 .modal-body {
-  padding: 20px; /* adjust padding as needed */
-  font-size: 0.9rem; /* adjust font size as needed */
+  padding: 20px;
+  font-size: 0.9rem;  
 }
 .modal-header {
   border-bottom: none;
 }
 .modal-body p {
-  font-size: 17px; /* adjust font size as needed */
+  font-size: 17px;  
   text-align: left;
   color: #333;
   font-style: italic;
@@ -438,16 +438,16 @@ footer p {
   justify-content: center;
 }
 .modal.show {
-  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   display: block;
 }
 
 .stars {
-  font-size: 1.5rem; /* adjust font size as needed */
-  color: #ffd700; /* adjust color as needed */
-  text-shadow: 0px 0px 2px #000000; /* adjust text shadow as needed */
+  font-size: 1.5rem;  
+  color: #ffd700;
+  text-shadow: 0px 0px 2px #000000;
   padding-left: 5%;
 }
