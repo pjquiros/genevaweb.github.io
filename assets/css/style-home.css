@@ -331,12 +331,16 @@ footer p {
     color: #333;
     font-weight: bold;
     font-style: italic;
+    margin-left: 5%;
   }
   .modal-body p {
     font-size: 0.8rem; /* adjust font size as needed */
     text-align: left;
     color: #333;
     font-style: italic;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -10%;
   }
   .modal-dialog {
     max-width: 90%; /* adjust the width as needed */
@@ -357,12 +361,6 @@ footer p {
       font-weight: bold;
       font-style: italic;
     }
-    .modal-body p {
-      font-size: 0.8rem; /* adjust font size as needed */
-      text-align: left;
-      color: #333;
-      font-style: italic;
-    }
   }
   .modal-body strong {
     font-size: 0.8rem;
@@ -370,12 +368,16 @@ footer p {
     color: #333;
     font-weight: bold;
     font-style: italic;
+    margin-left: 5%;
   }
   .modal-body p {
     font-size: 0.8rem; /* adjust font size as needed */
     text-align: left;
     color: #333;
     font-style: italic;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -5%;
   }
   .modal-dialog {
     max-width: 90%; /* adjust the width as needed */
@@ -402,6 +404,9 @@ footer p {
   text-align: left;
   color: #333;
   font-style: italic;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -5%;
 }
 .modal-body strong {
   font-size: 17px;
@@ -409,6 +414,7 @@ footer p {
   color: #333;
   font-weight: bold;
   font-style: italic;
+  margin-left: 5%;
 }
 .modal-backdrop {
   display: none;
@@ -443,4 +449,5 @@ footer p {
   font-size: 1.5rem; /* adjust font size as needed */
   color: #ffd700; /* adjust color as needed */
   text-shadow: 0px 0px 2px #000000; /* adjust text shadow as needed */
+  padding-left: 5%;
 }
