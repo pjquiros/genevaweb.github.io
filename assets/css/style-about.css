@@ -86,12 +86,6 @@ body {
   height: 350px; /* Adjust logo size */
   margin-bottom: 20px;
   border-radius: 5%;
-  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Updated transition */
-  transform: perspective(600px) rotateX(0deg) rotateY(0deg);
-}
-
-.header-logo:hover {
-  transform: perspective(600px) rotateX(10deg) rotateY(10deg) scale(1.1);
 }
 
 .header-buttons {
