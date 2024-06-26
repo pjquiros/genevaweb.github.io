@@ -55,7 +55,9 @@ body {
     bottom: 0;
     width: 100%;
   }
-  
+  .contact-form textarea::placeholder {
+    font-weight: normal;
+}
   footer p {
     font-size: 20px;
     margin-bottom: 0;
