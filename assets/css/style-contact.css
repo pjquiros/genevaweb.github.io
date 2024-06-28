@@ -55,9 +55,7 @@ body {
     bottom: 0;
     width: 100%;
   }
-  .contact-form textarea::placeholder {
-    font-weight: normal;
-}
+  
   footer p {
     font-size: 20px;
     margin-bottom: 0;
@@ -70,7 +68,7 @@ body {
     font-weight: bold;
 }
 
-  .contact-form {
+.contact-form {
     max-width: 100%;
     margin: 40px auto;
     padding: 60px;
@@ -105,17 +103,20 @@ body {
 .contact-form label {
     font-weight: bold;
     margin-bottom: 10px;
+    font-style: italic;
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"],  .contact-form input[type="Subject"], .contact-form textarea {
     border: 2px solid #4CC858;
     margin-bottom: 2%;
+    font-style: italic;
   }
 
 .contact-form input,.contact-form textarea {
     padding: 10px;
     border: 2px solid #4CC858;
     border-radius: 10px;
+    font-style: italic;
     width: 100%;
 }
 

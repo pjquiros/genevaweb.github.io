@@ -15,29 +15,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-        <div class="container">
-            <a class="navbar-brand animate__animated animate__fadeInDown" href="#" style="font-weight: bold; font-size: 34px; ">Sheldon Weinbaum</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active animate__animated animate__fadeInDown" aria-current="page" href="https://pjquiros.github.io/genevaweb.github.io/index.html" style="font-weight: bold;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link animate__animated animate__fadeInDown" href="https://pjquiros.github.io/genevaweb.github.io/about.html" style="font-weight: bold;">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link animate__animated animate__fadeInDown" href="https://pjquiros.github.io/genevaweb.github.io/contact.html" style="font-weight: bold;">Contact</a>
-                    </li>
-                </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container">
+                <a class="navbar-brand animate__animated animate__fadeInDown" href="#" style="font-weight: bold; font-size: 34px; ">Sheldon Weinbaum</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active animate__animated animate__fadeInDown" aria-current="page" href="/index.html" style="font-weight: bold;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animate__animated animate__fadeInDown" href="/about.html" style="font-weight: bold;">About the Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link animate__animated animate__fadeInDown" href="/contact.html" style="font-weight: bold;">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <section id="contact-body" class="py-5">
         <div class="container">
@@ -50,20 +49,20 @@
                         <br></br>
                         <form id="contact-form" onsubmit="sendEmail(event)">
                             <div class="input-contact mb-3">
-                                <label for="name" class="form-label" >Name</label>
-                                <input type="text" class="form-control" id="userName" name="userName" style="font-style: italic;" placeholder="Your Name">
+                                <label for="name" class="form-label" style="font-style: italic;">Name</label>
+                                <input type="text" class="form-control" id="userName" name="userName" placeholder="Your Name">
                             </div>
                             <div class="input-contact mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="userEmail" name="userEmail" style="font-style: italic;" placeholder="Example@youremail.com">
+                                <label for="email" class="form-label" style="font-style: italic;">Email</label>
+                                <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Example@youremail.com">
                             </div>
                             <div class="input-contact mb-3">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="userSubject" style="font-style: italic;" name="userSubject" placeholder="Title">
+                                <label for="subject" class="form-label" style="font-style: italic;">Subject</label>
+                                <input type="text" class="form-control" id="userSubject" name="userSubject" placeholder="Title">
                             </div>
                             <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="userMessage" name="userMessage" style="font-style: italic;" placeholder="Your Message"></textarea>
+                                <label for="message" class="form-label" style="font-style: italic;">Message</label>
+                                <textarea class="form-control" id="userMessage" name="userMessage" placeholder="Your Message"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
@@ -87,18 +86,17 @@
     <script type="text/javascript">
     </script>
     <script type="text/javascript">
-        function sendEmail(event) {
-            event.preventDefault();
-            
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Message Sent!',
-                        text: 'Thank you for reaching out to us!',
-                        showConfirmButton: false,
-                        timer: 2000
-                    });
-        }
+function sendEmail(event) {
+    event.preventDefault();
+    Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: 'Thank you for reaching out to us!',
+        showConfirmButton: false,
+        timer: 2000
+    });
+}
     </script>
-
+    
 </body>
 </html>
