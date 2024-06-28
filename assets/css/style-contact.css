@@ -65,7 +65,7 @@ body {
     resize: none;
     height: 200px;
     font-family: "Lato", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .contact-form {
